@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3 Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="script.js"></script>
+
+    <header>
+        <h1>Web-Dev Interactive Quiz. GoodLuck!!!</h1>
+    </header>
+
+    <main>
+
+        <div id="auth">
+            <h2>Click to Start Quiz</h2>
+            <button onclick="authenticate()">Start Quiz</button>
+        </div>
+
+        <div id="quiz" style="display: none;">
+            <div id="question-container"></div>
+            <div id="navigation-buttons" style="display: none;">
+                <button id="prev-button" onclick="prevQuestion()" disabled>Previous</button>
+                <button id="next-button" onclick="nextQuestion()">Next</button>
+                <button id="submit-button" onclick="submitQuiz()" style="display: none;">Submit Quiz</button>
+            </div>
+
+            <div id="score" style="display: none;"></div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web-Dev. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
